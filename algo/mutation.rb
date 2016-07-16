@@ -4,6 +4,15 @@
 
 def mutation?(base_word, mutation)
 
+  if_contains = true
+  mutation.split("").each do |letter|
+    if not base_word.include?(letter)
+      if_contains = false
+      break
+    end
+  end
+
+  return if_contains
 end
 
 # Driver code - don't touch anything below this line.

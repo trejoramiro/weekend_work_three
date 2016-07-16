@@ -4,6 +4,14 @@
 
 def sum_of_range(array)
 
+  total_sum = 0
+
+  array.each do |num|
+    total_sum = total_sum + (num * 2)
+  end
+
+  return total_sum
+
 end
 
 # Driver code - don't touch anything below this line.
